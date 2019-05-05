@@ -1,3 +1,7 @@
 notebooks_test/fashiongen_256_256_train.h5
 cocoapi/test2017/*
 cocoapi/val2017/*
+.ipynb_checkpoints/
+pycocotools/__pycache__/
+pycocotools/_mask.cpython-36m-x86_64-linux-gnu.so
+
