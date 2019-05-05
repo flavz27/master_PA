@@ -1,1 +1,3 @@
 notebooks_test/fashiongen_256_256_train.h5
+cocoapi/test2017/*
+cocoapi/val2017/*
