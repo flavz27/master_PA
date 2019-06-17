@@ -7,6 +7,7 @@ import numpy as np
 #import argparse
 #import imutils
 import time
+import json
 
 
 def mesurement_estimation(img):
@@ -121,8 +122,16 @@ def mesurement_estimation(img):
     hipsR = np.array((points[BODY_PARTS["RHip"]][0] ,points[BODY_PARTS["RHip"]][1]))
 
     hipsEucl = np.linalg.norm(hipsL - hipsR)
+    result = {
+        'shoulders': shouldersEucl,
+        'hips': hipsEucl
+        
+    }
+    result_json = json.dumps(result)
+   
     
-    return 'Shoulders Eucl: '+ str(shouldersEucl) + 'Hips Eucl: ' + str(hipsEucl)
+   # return 'Shoulders Eucl: '+ str(shouldersEucl) + 'Hips Eucl: ' + str(hipsEucl)
+    return(result_json)
 
 @app.route('/', methods=['POST'])
 def hello_world():
