@@ -129,8 +129,6 @@ def mesurement_estimation(img):
     }
     result_json = json.dumps(result)
    
-    
-   # return 'Shoulders Eucl: '+ str(shouldersEucl) + 'Hips Eucl: ' + str(hipsEucl)
     return(result_json)
 
 @app.route('/', methods=['POST'])
