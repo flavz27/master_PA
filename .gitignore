@@ -9,4 +9,4 @@ cocoapi/PythonAPI/build/*
 cocoapi/PythonAPI/pycocotools/__pycache__/*
 cocoapi/PythonAPI/pycocotools/_mask.cpython-37m-darwin.so
 test/__pycache__/*
-test/poste/*
+test/pose/*
