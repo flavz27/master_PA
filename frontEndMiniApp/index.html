@@ -14,29 +14,58 @@
   </head>
   <body>
       <div class="container">
-            <h1>FashionAI</h1>
-            <h2>Body type estimator</h2>
+            <h1 class="display-3">FashionAI</h1>
+            <h3 class="display-4">Body type estimator</h3>
+            <div class="content">
 
+           
           
                     <form method="post" action="" enctype="multipart/form-data" id="myform">
                         <div class="row">
-                            <div class="col-sm">
+                            <div class="col">
                               <div><img src="giphy.gif" id="loading"></div>
                               <div class="measurements">
-                                    <h3>Shoulders:</h3><p id="shoulders"></p>
-                                    <h3>Hips:</h3><p id="hips"></p>
-                                    <h3>Hips to shoulder ratio: </h3><p id="ratio"></p>
+                                <div class="row">
+                                <div class="col">
+                                    <h4>Shoulders:</h4>
+                                    <h4>Hips:</h4>
+                                  
+                                </div>
+                                <div class="col">
+                                    <p id="shoulders"></p>
+                    
+                                    <p id="hips"></p>
+                                    
+
+                                </div>
+                              </div>
+                                   
+                                    <!-- <h3>Hips to shoulder ratio: </h3> -->
                               </div>
                             </div>
-                            <div class="col-sm">
-                                <input class="form-control-file" type="file" id="file" name="file" />
-                                <input type="button" class="button" value="Upload" id="but_upload">
+                            <div class="col">
+                                <!-- <div class="input-group">
+                                    
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input form-control-file" id="file"
+                                        aria-describedby="inputGroupFileAddon01" name="file">
+                                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
+                                  
+
+
+                               
+                              </div> -->
+                              <input class="form-control-file choosefile" type="file" id="file" name="file" />
+                              <input type="button" class="button btn btn-primary" value="Calculate" id="but_upload">
+
                             </div>
 
                         </div>
                         
                         
                     </form>
+                  </div>
             <!-- </div> -->
            
 

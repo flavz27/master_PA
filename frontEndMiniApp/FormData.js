@@ -1,10 +1,12 @@
 $(document).ready(function(){
 
     $("#but_upload").click(function(){
+        $(".measurements").hide()
 
         var fd = new FormData();
         var files = $('#file')[0].files[0];
         fd.append('file',files);
+        console.log(files)
         $('#loading').show();
         // $.ajax({
         //     url: 'upload.php',
@@ -35,11 +37,11 @@ $(document).ready(function(){
                     $("#loading").hide()
                     const dataResponse = JSON.parse(response)
                     console.log(dataResponse.hips)
-                    $("#hips").html(dataResponse.hips);
-                    $("#shoulders").html(dataResponse.shoulders);
+                    $("#hips").html(dataResponse.hips + " px");
+                    $("#shoulders").html(dataResponse.shoulders + " px");
                     const ratio = Number(dataResponse.hips) / Number(dataResponse.shoulders)
                     console.log(ratio)
-                    $("#ratio").html(ratio);
+                    //$("#ratio").html(ratio);
 
                     // $("#img").attr("src",response); 
                     // $(".preview img").show(); // Display image element

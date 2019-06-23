@@ -1,7 +1,25 @@
-.measurements {
+div.measurements {
     display: none;
  }
 
  #loading {
      display: none;
+ }
+
+ #but_upload {
+     align-content: center;
+     text-align: center;
+     margin-top:20px;
+ }
+
+.choosefile {
+     padding-top: 10px !important;
+     padding-bottom: 10px !important;
+    color: #686868;
+     height: 50px !important;
+ }
+
+ div.content {
+     margin-top: 30px;
+     padding-top:30px;
  }
