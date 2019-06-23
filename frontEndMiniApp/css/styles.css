@@ -1,4 +1,7 @@
-.preview img{
+.measurements {
     display: none;
-    max-width: 90%;
+ }
+
+ #loading {
+     display: none;
  }
